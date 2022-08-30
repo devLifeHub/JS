@@ -1,0 +1,59 @@
+.container {
+   height: 100vh;
+}
+
+.content {
+   padding-top: 50px;
+}
+
+.content__table {
+   margin-right: 20px;
+   width: 100%;
+   max-width: 899px;
+   border: 1px solid rgba(149, 159, 161);
+   border-radius: 10px;
+   background-color: rgba(149, 159, 161, 0.5);
+}
+
+.content__table-title,
+.content__form-title {
+   text-align: center;
+}
+
+.head-students__fullName,
+.head-students__faculty,
+.head-students__birthday,
+.head-students__yearStartStudy {
+   text-align: center;
+   cursor: pointer;
+}
+
+.head-students__fullName {
+   width: 33%;
+}
+
+.head-students__faculty {
+   width: 25%;
+}
+
+.text-ac {
+   text-align: center;
+}
+
+.content__form {
+   padding: 10px;
+   max-width: 200px;
+   width: 100%;
+   border: 1px solid rgba(24, 173, 8);
+   border-radius: 10px;
+   background-color: rgba(24, 173, 8, 0.5);
+}
+
+.input {
+   text-align: center;
+}
+
+.btn-add {
+   display: flex;
+   margin: auto;
+}
