@@ -1,12 +1,13 @@
 // --------------------------------------class Student--------------------------------------
-export default class Student {
-   constructor(name, surname, patronymic, birthday, yearStartStudy, faculty) {
+class Student {
+   constructor(name, surname, patronymic, birthday, yearStartStudy, faculty, id) {
       this.name = name
       this.surname = surname
       this.patronymic = patronymic
       this.birthday = birthday
       this.yearStartStudy = yearStartStudy
       this.faculty = faculty
+      this.id = id
    }
 
    // --------------transfer order to table full name
@@ -17,7 +18,7 @@ export default class Student {
    // --------------format date dd.mm.yyyy (birthday)--------------
    getBirthdayString() {
       const yyyy = this.birthday.getFullYear();
-      let mm = this.birthday.getMonth();
+      let mm = this.birthday.getMonth() + 1;
       let dd = this.birthday.getDate();
       // ------------------------------------------
       if (dd < 10) dd = '0' + dd;
@@ -31,6 +32,7 @@ export default class Student {
       const today = new Date();
       let age = today.getFullYear() - this.birthday.getFullYear();
       let month = today.getMonth() - this.birthday.getMonth();
+      // ------------------------------------------
       if (month < 0 || (month === 0 && today.getDate() < this.birthday.getDate())) {
          age--;
       }

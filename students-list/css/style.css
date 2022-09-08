@@ -10,9 +10,10 @@
    margin-right: 20px;
    width: 100%;
    max-width: 899px;
-   border: 1px solid rgba(149, 159, 161);
+   border: 1px solid rgb(60, 90, 96);
    border-radius: 10px;
-   background-color: rgba(149, 159, 161, 0.5);
+   background-color: rgba(60, 90, 96, 0.5);
+   box-shadow: 0 0 10px rgb(60, 90, 96);
 }
 
 .content__table-title,
@@ -24,20 +25,32 @@
 .head-students__faculty,
 .head-students__birthday,
 .head-students__yearStartStudy {
+   width: 25%;
    text-align: center;
    cursor: pointer;
 }
 
-.head-students__fullName {
-   width: 33%;
+.input-group {
+   width: 50%;
 }
 
-.head-students__faculty {
-   width: 25%;
+.form-control {
+   border-radius: 20px;
+}
+
+#searchBtn {
+   border-radius: 0 20px 20px 0;
+   background-color: rgb(1, 1, 144);
+   color: white;
+}
+
+#searchBtn:hover {
+   background-color: rgb(1, 1, 214);
 }
 
 .text-ac {
    text-align: center;
+   vertical-align: middle;
 }
 
 .content__form {
@@ -47,9 +60,11 @@
    border: 1px solid rgba(24, 173, 8);
    border-radius: 10px;
    background-color: rgba(24, 173, 8, 0.5);
+   box-shadow: 0 0 10px rgba(24, 173, 8);
 }
 
-.input {
+.input,
+.form-control {
    text-align: center;
 }
 
@@ -57,3 +72,39 @@
    display: flex;
    margin: auto;
 }
+
+.text-search {
+   margin-bottom: 0;
+   text-align: center;
+}
+
+.input-content {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 10px 10px;
+}
+
+.cur-pointer {
+   cursor: pointer;
+}
+
+.cur-default {
+   cursor: default;
+}
+
+.table-danger {
+    --bs-table-hover-bg: #b02a37 !important;
+    border-color: #b02a37 !important;
+}
+
+.btn-ready {
+   transform: translate(-75px);
+   transition: transform .3s ease-in-out;
+}
+
+.btn-group>.btn:active, .btn-group>.btn:focus {
+   z-index: 0;
+   box-shadow: none;
+}
+
+
