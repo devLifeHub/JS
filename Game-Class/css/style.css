@@ -1,0 +1,242 @@
+/* #----------------------------style game---------------------------- */
+.bg {
+   width: 100%;
+   height: 92vh;
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   background-size: cover;
+}
+
+/* #----------------------------bg-1---------------------------- */
+.bg-wood {
+   background-image: url('../img/wood.jpg');
+}
+
+/* #----------------------------bg-2---------------------------- */
+.bg-space {
+   background-image: url('../img/space.jpg');
+}
+
+/* #----------------------------bg-3---------------------------- */
+.bg-wall {
+   background-image: url('../img/wall.jpg');
+}
+
+/* #----------------------------bg-4---------------------------- */
+.bg-neon {
+   background-image: url('../img/neon.jpg');
+}
+
+/* #----------------------------shift Background and Shirts---------------------------- */
+.content {
+   margin-right: 101px;
+}
+
+/* #----------------------------shift Background and Shirts from modes before 992px---------------------------- */
+@media (min-width: 992px) {
+   .dfb {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .df {
+      display: flex;
+   }
+
+}
+
+/* #----------------------------common styles cards background---------------------------- */
+.card__bg {
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+   background-position: center;
+   background-color: transparent;
+   border-radius: 10px;
+}
+
+/* #----------------------------cards bg-1---------------------------- */
+.card__bg__img-1 {
+   background-image: url('../img/card-default.jpg');
+}
+
+/* #----------------------------cards bg-2---------------------------- */
+.card__bg__img-2 {
+   background-image: url('../img/card-2.jpg');
+}
+
+/* #----------------------------cards bg-3---------------------------- */
+.card__bg__img-3 {
+   background-image: url('../img/card-3.jpg');
+}
+
+/* #----------------------------cards bg-4---------------------------- */
+.card__bg__img-4 {
+   background-image: url('../img/card-4.jpg');
+}
+
+/* #----------------------------style for cards top wrapper---------------------------- */
+.cards__wrapper {
+   width: 100%;
+   max-height: 80vh;
+   min-height: 70vh;
+}
+
+/* #----------------------------style for cards bottom wrapper---------------------------- */
+.card__block {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   margin-bottom: 10px;
+   padding-top: 10px;
+   width: 100%;
+   max-height: 80vh;
+   min-height: 70vh;
+}
+
+/* #----------------------------style cards---------------------------- */
+.card {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   width: 15%;
+   height: 35vh;
+   color: transparent;
+   font-size: 82px;
+   font-weight: bold;
+   border-radius: 10px;
+   overflow: hidden;
+   transition: background-color .3s, color .3s;
+   cursor: pointer;
+   transform: rotateY(180deg);
+   transition: transform .1s;
+}
+
+/* #----------------------------cards disabled---------------------------- */
+.card-disabled {
+   pointer-events: none;
+   opacity: 0.8;
+}
+
+/* #----------------------------cards open---------------------------- */
+.card.open {
+   background-image: none;
+   background-color: rgb(229, 200, 165);
+   color: rgb(90, 69, 43);
+   transform: rotateY(0deg);
+   transition: transform 1.5s color 1s;
+}
+
+/* #----------------------------cards success---------------------------- */
+.card.success {
+   background-image: url('../icon/completed.svg');
+   background-repeat: no-repeat;
+   background-size: 50%;
+   background-color: rgb(1, 216, 1);
+   color: transparent;
+   transform: scale(0.95);
+}
+
+/* #----------------------------style for button top wrapper---------------------------- */
+.btn__wrapper {
+   width: 100%;
+}
+
+/* #----------------------------style for button bottom wrapper---------------------------- */
+.btn__group {
+   position: relative;
+   margin: auto;
+   width: 115px;
+}
+
+/* #----------------------------common styles button---------------------------- */
+.btn-play,
+.btn-restart {
+   margin: auto;
+   background-color: #4CAF50;
+   border: 1px solid #4CAF50;
+   border-radius: 10px;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+/* #----------------------------styles button restart---------------------------- */
+.btn-restart {
+   position: absolute;
+   right: 5px;
+   background-color: rgb(11, 11, 162);
+   border: 1px solid rgb(11, 11, 162);
+}
+
+/* #----------------------------button play hover---------------------------- */
+.btn-play:hover {
+   background-color: #11cd17;
+}
+
+/* #----------------------------button restart hover---------------------------- */
+.btn-restart:hover {
+   background-color: blue;
+}
+
+/* #----------------------------opacity---------------------------- */
+.op-0 {
+   opacity: 0;
+   z-index: -10;
+}
+
+/* #----------------------------style wrapper timer---------------------------- */
+.timer__wrapper {
+   position: absolute;
+   width: 100vw;
+}
+
+/* #----------------------------timer---------------------------- */
+.timer {
+   margin: auto;
+   width: 100px;
+   height: 42px;
+   text-align: center;
+   color: white;
+   border: 2px solid white;
+   border-radius: 20px;
+   font-size: 26px;
+}
+
+/* #----------------------------timer <5---------------------------- */
+.timer-red {
+   color: red;
+   border: 2px solid red;
+}
+
+.navbar-collapse {
+   display: absolute;
+   z-index: 100;
+}
+
+/* #----------------------------style img game over---------------------------- */
+.game-over {
+   background-image: url('../img/gameOver.jpg');
+   background-position: center center;
+   background-size: 50%;
+   background-repeat: no-repeat;
+   transform: scale(2, 2);
+   transition: transform .7s ease-in-out;
+}
+
+/* #----------------------------style img game win---------------------------- */
+.game-win {
+   background-image: url('../img/youWin.jpg');
+   background-position: center center;
+   background-size: 50%;
+   background-repeat: no-repeat;
+   transform: scale(2, 2);
+   transition: transform .7s ease-in-out;
+}
